@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Telenoticiasonline</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Jose Ingunza Hamann">
+        <link type="image/png" rel="icon" href="images/favicon.png">
+        <style>
+            body {
+                font-family: arial, sans-serif;
+                font-size: 16px;
+            }
+            h2,h3,h4,h5,h6,p {
+                font-family: serif;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            th,td {
+                border: 2px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/logo2.png" alt="logo telenoticias"></a>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="seccion1.html">Economía y Finanzas</a></li>
+                    <li><a href="seccion2.html">Política</a></li>
+                    <li><a href="seccion3.html">Salud</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <h1>Escríbenos</h1>
+            <form action="contacto.php">
+                <fieldset style="width: 640px;">
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="datos" id="nombre" size="80" maxlength="80"><br><br>
+                    <label for="apellidos">Apellidos</label><br>
+                    <input type="text" name="datos" id="apellidos" size="80" maxlength="80"><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="datos" id="email" size="40" maxlength="40"><br><br>
+                    <label for="tlf">Telefono</label><br>
+                    <input type="text" name="datos" id="tlf" size="40" maxlength="40"><br><br>
+                    <label>Sexo</label><br>
+                    <input id="hom" type="radio" name="sexo" checked>
+                    <label for="hom">Hombre</label><br>
+                    <input id="muj" type="radio" name="sexo">
+                    <label for="muj">Mujer</label><br>
+                    <input id="indef" type="radio" name="sexo">
+                    <label for="indef">No especifica</label><br><br>
+                    <label for="int">Define tu interés</label><br>
+                    <select name="interes" id="int" multiple size="5" style="width: 240px;">
+                        <optgroup label="profesional">
+                            <option value="Negocios">Negocios</option>
+                            <option value="Estudios">Estudios</option>
+                            <option value="Inversiones">Inversiones</option>
+                        </optgroup>
+                        <optgroup label="entretenimiento">
+                            <option value="Viajes">Viajes</option>
+                            <option value="Deporte">Deporte</option>
+                            <option value="Ocio">Ocio</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <fieldset style="width: 640px;">
+                    <legend>Comentarios</legend>
+                    <textarea name="comentario" id="coment" cols="75" rows="10" placeholder="Escribe aquí tu comentario" style="overflow-y: scroll;" ></textarea>
+                    <br><br>
+                    <input type="checkbox" name="check" id="check" value="aceptado" checked>
+                    <label for="check">He revisado mis datos</label><br><br>
+                    <input type="submit" value="Enviar" name="enviar"><br>
+                </fieldset>
+            </form>
+            <br>
+            <h2>Ubícanos</h2>
+            <p>Si tienes alguna consulta o sugerencia que quisieras realizar personalmente, te esperamos en esta dirección</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1430.1642924845476!2d-84.11088652672346!3d9.937389714449003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fdcb9870cc0f%3A0xb92f06bdd14757a0!2sTelenoticias%20Canal%207!5e0!3m2!1sde!2sde!4v1636837324215!5m2!1sde!2sde" width="670" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br><br>
+        </main>
+        <footer>
+            <p><em>Actualizado el <time datetime="2021-11-14">14 de noviembre de 2021</time></em></p>
+            <p><em>Autor: Jose Ingunza Hamann</em></p>
+        </footer>
+    </body>
+</html>
